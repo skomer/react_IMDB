@@ -19837,9 +19837,9 @@
 	      return React.createElement(
 	        FilmRow,
 	        {
-	          name: filmObject.name
+	          name: filmObject.name,
+	          key: filmObject.id
 	        },
-	        'url=',
 	        filmObject.url
 	      );
 	    });
@@ -19872,9 +19872,14 @@
 	      'div',
 	      { className: 'film-row' },
 	      React.createElement(
-	        'h3',
+	        'h4',
+	        { className: 'film-name' },
+	        this.props.name
+	      ),
+	      React.createElement(
+	        'p',
 	        null,
-	        'Film Row'
+	        this.props.children
 	      )
 	    );
 	  }

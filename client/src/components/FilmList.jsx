@@ -9,8 +9,9 @@ var FilmList = React.createClass({
       return (
         <FilmRow
           name={filmObject.name}
+          key={filmObject.id}
         >
-          url={filmObject.url}
+          {filmObject.url}
         </FilmRow>
         );
     });
