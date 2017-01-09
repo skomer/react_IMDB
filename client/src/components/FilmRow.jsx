@@ -5,8 +5,7 @@ var FilmRow = React.createClass({
   render: function() {
     return (
       <div className='film-row'>
-        <h4 className='film-name'>{this.props.name}</h4>
-        <p>{this.props.children}</p>
+        <a href={this.props.children} className='film-name'>{this.props.name}</a>
       </div>
     );
   }

@@ -19872,14 +19872,9 @@
 	      'div',
 	      { className: 'film-row' },
 	      React.createElement(
-	        'h4',
-	        { className: 'film-name' },
+	        'a',
+	        { href: this.props.children, className: 'film-name' },
 	        this.props.name
-	      ),
-	      React.createElement(
-	        'p',
-	        null,
-	        this.props.children
 	      )
 	    );
 	  }
