@@ -48,7 +48,7 @@
 	
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
-	var OpeningBox = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./OpeningBox.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var OpeningBox = __webpack_require__(159);
 	
 	window.onload = function () {
 	  ReactDOM.render(React.createElement(OpeningBox, null), document.getElementById('app'));
@@ -19747,6 +19747,184 @@
 	
 	module.exports = __webpack_require__(3);
 
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var UkOpeningBox = __webpack_require__(160);
+	var GetShowtimes = __webpack_require__(164);
+	
+	var OpeningBox = React.createClass({
+	  displayName: 'OpeningBox',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'opening-box' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Opening Box'
+	      ),
+	      React.createElement(UkOpeningBox, null),
+	      React.createElement(GetShowtimes, null)
+	    );
+	  }
+	
+	});
+	
+	module.exports = OpeningBox;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var FilmList = __webpack_require__(161);
+	var SeeMore = __webpack_require__(163);
+	
+	var UkOpeningBox = React.createClass({
+	  displayName: 'UkOpeningBox',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'uk-opening-box' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Uk Opening Box'
+	      ),
+	      React.createElement(FilmList, null),
+	      React.createElement(SeeMore, null)
+	    );
+	  }
+	
+	});
+	
+	module.exports = UkOpeningBox;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var FilmRow = __webpack_require__(162);
+	
+	var FilmList = React.createClass({
+	  displayName: 'FilmList',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'film-list' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Film List'
+	      ),
+	      React.createElement(FilmRow, null)
+	    );
+	  }
+	
+	});
+	
+	module.exports = FilmList;
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var FilmRow = React.createClass({
+	  displayName: 'FilmRow',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'film-row' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Film Row'
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = FilmRow;
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var SeeMore = React.createClass({
+	  displayName: 'SeeMore',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'see-more' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'See More'
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = SeeMore;
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var GetShowTimes = React.createClass({
+	  displayName: 'GetShowTimes',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'get-showtimes' },
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Get Showtimes'
+	      )
+	    );
+	  }
+	
+	});
+	
+	module.exports = GetShowTimes;
 
 /***/ }
 /******/ ]);

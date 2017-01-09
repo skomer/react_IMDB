@@ -1,4 +1,5 @@
 var React = require('react');
+var FilmRow = require('./FilmRow.jsx');
 
 var FilmList = React.createClass({
 
@@ -6,6 +7,7 @@ var FilmList = React.createClass({
     return (
       <div className='film-list'>
         <h3>Film List</h3>
+        <FilmRow />
       </div>
     );
   }
