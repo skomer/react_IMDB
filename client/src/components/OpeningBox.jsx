@@ -12,9 +12,10 @@ var OpeningBox = React.createClass({
     return (
       <div className='opening-box'>
         <h3>Opening Box</h3>
+        <UkOpeningBox />
+        <GetShowtimes />
       </div>
     );
-
   }
 
 });
