@@ -4,10 +4,20 @@ var FilmRow = require('./FilmRow.jsx');
 var FilmList = React.createClass({
 
   render: function() {
+
+    var filmComponents = this.props.films.map(function(filmObject) {
+      return (
+        <FilmRow
+          name={filmObject.name}
+        >
+          url={filmObject.url}
+        </FilmRow>
+        );
+    });
+
     return (
       <div className='film-list'>
-        <h3>Film List</h3>
-        <FilmRow />
+        {filmComponents}
       </div>
     );
   }
