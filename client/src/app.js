@@ -1,9 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var OpeningBox = require('./OpeningBox.jsx');
 
 window.onload = function(){
   ReactDOM.render(
-    <h1> Yo </h1>,
+    <OpeningBox />,
     document.getElementById('app')
   );
 }

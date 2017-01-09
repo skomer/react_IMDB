@@ -48,13 +48,10 @@
 	
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
+	var OpeningBox = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./OpeningBox.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	window.onload = function () {
-	  ReactDOM.render(React.createElement(
-	    'h1',
-	    null,
-	    ' Yo '
-	  ), document.getElementById('app'));
+	  ReactDOM.render(React.createElement(OpeningBox, null), document.getElementById('app'));
 	};
 
 /***/ },
