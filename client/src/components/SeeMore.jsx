@@ -6,6 +6,7 @@ var SeeMore = React.createClass({
     return (
       <div className='see-more'>
         <h3>See More</h3>
+        <hr />
       </div>
     );
   }

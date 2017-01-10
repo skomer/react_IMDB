@@ -19834,14 +19834,12 @@
 	  render: function render() {
 	
 	    var filmComponents = this.props.films.map(function (filmObject) {
-	      return React.createElement(
-	        FilmRow,
-	        {
-	          name: filmObject.name,
-	          key: filmObject.id
-	        },
-	        filmObject.url
-	      );
+	      return React.createElement(FilmRow, {
+	        name: filmObject.name,
+	        key: filmObject.id,
+	        showTimesUrl: filmObject.showTimesUrl,
+	        url: filmObject.url
+	      });
 	    });
 	
 	    return React.createElement(
@@ -19873,8 +19871,13 @@
 	      { className: 'film-row' },
 	      React.createElement(
 	        'a',
-	        { href: this.props.children, className: 'film-name' },
+	        { href: this.props.url, className: 'film-name' },
 	        this.props.name
+	      ),
+	      React.createElement(
+	        'a',
+	        { href: this.props.showTimesUrl, className: 'show-times-url' },
+	        'Showtimes'
 	      )
 	    );
 	  }
@@ -19903,7 +19906,8 @@
 	        'h3',
 	        null,
 	        'See More'
-	      )
+	      ),
+	      React.createElement('hr', null)
 	    );
 	  }
 	

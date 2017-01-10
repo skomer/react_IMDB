@@ -10,8 +10,9 @@ var FilmList = React.createClass({
         <FilmRow
           name={filmObject.name}
           key={filmObject.id}
+          showTimesUrl={filmObject.showTimesUrl}
+          url={filmObject.url}
         >
-          {filmObject.url}
         </FilmRow>
         );
     });
